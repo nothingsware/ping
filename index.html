@@ -50,8 +50,12 @@
   <script>
     // Touch controls for mobile devices
     var canvas = document.getElementById("canvas");
-    canvas.addEventListener("touchstart", handleTouchStart, false);
-    canvas.addEventListener("touchmove", handleTouchMove, false);
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
+
+    if (isTouchDevice) {
+      canvas.addEventListener("touchstart", handleTouchStart, false);
+      canvas.addEventListener("touchmove", handleTouchMove, false);
+    }
 
     var xDown = null;
     var yDown = null;
