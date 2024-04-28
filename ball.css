@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Adjusted margin for better spacing */
+    border-radius: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #4caf50;
+    border: none;
+    color: rgb(21, 44, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4caf50; /* Adjusted initial box-shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 20px #3e8e41; /* Adjusted box-shadow on hover */
+}
+
+.control {
+    text-align: center;
+}
+
+canvas {
+    background: #000;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger scale */
+    }
+    100% {
+        transform: scale(1); /* Back to initial scale */
+    }
+}
